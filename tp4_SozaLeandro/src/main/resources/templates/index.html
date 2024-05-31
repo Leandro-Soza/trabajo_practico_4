@@ -1,17 +1,165 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximun-scale=1, user-scalable=no">
 		<title>Pagina Facultad</title>
-		<link th:rel="stylesheet" type="text/css"th:ref="@{/webjars/bootstrap/css/bootstrap.min.css}">
+		<link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
 	</head>
 	
 	<body>
-		<header>
-			
+	<div class="container bg-info text-dark bg-opacity-10">
+		<header class="text-center">
+			<img alt="logo-UnJu" th:src="@{/images/logoFI.png}" width="1100" height="200">
+			<h1 class="display-4">FACULTAD DE INGENIERIA</h1>
+			<p class="text-danger"><strong>YOU'LL NEVER WALK ALONE</strong></p>
 		</header>
-		<h1 class="bg-info">Hola, saludos!</h1>
+		
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">Inicio</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Carreras</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Noticias</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link " href="#">Contactos</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		
+		<div>
+			<div class="row">
+				<div class="col-9">
+				<main>
+				<div class="container text-center">
+					<div class="row align-items-center">
+						<h1 class="display-3">Breve descripción de la Facultad de Ingenieria</h1>
+							<p>La Facultad de Ingeniería de la Universidad Nacional de Jujuy (UNJu) es una institución educativa reconocida por su excelencia académica y compromiso con el desarrollo regional y nacional en el campo de la ingeniería. Ubicada en la provincia de Jujuy, Argentina, esta facultad ofrece una amplia gama de carreras de ingeniería, 
+							incluyendo Ingeniería Civil, Ingeniería Electromecánica, Ingeniería en Computación, Ingeniería en Alimentos, entre otras. La Facultad de Ingeniería UNJu se destaca por su enfoque en la investigación aplicada y la vinculación con el sector productivo y la comunidad, promoviendo así la innovación y el desarrollo tecnológico en la región. 
+							Sus programas académicos están diseñados para brindar a los estudiantes una sólida formación teórica y práctica, preparándolos para enfrentar los desafíos del mundo laboral con éxito.	Además, la facultad cuenta con un cuerpo docente altamente calificado y con una infraestructura moderna que incluye laboratorios equipados con tecnología 
+							de punta, lo que permite a los estudiantes adquirir habilidades y conocimientos actualizados en su área de estudio. La Facultad de Ingeniería UNJu también fomenta el intercambio académico y la colaboración internacional, promoviendo así el enriquecimiento cultural y académico de su comunidad estudiantil.</p>
+						<div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        Segundo y Tercer Encuentro de los Talleres de Capacitación de "AUTOCUIDADO Y EMOCIONES" para No Docentes de la FI UNJu
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+						      <div class="accordion-body bg-success text-dark bg-opacity-10">
+						        <strong>Durante los días 15 y 22 de mayo,</strong> se llevaron a cabo con éxito el segundo y tercer encuentro de los Talleres de Capacitación de "AUTOCUIDADO Y EMOCIONES" destinados a los no docentes de la Facultad de Ingeniería de la Universidad Nacional de Jujuy (FI UNJu). Ambas sesiones se realizaron de 8:00 a 9:00 a.m. en el Aula 15 de la Facultad de Ingeniería.
+						        El segundo encuentro, que tuvo lugar el 15 de mayo, se centró en la exploración del tema "Qué son las emociones", mientras que el tercer encuentro, realizado el 22 de mayo, se enfocó en "Habilidades para la vida: Autoconocimiento". Los talleres estuvieron a cargo de la Lic. en Psicología Marianela Martín y la Docente Patricia Artero Soule, pertenecientes al Departamento 
+						        de Salud Mental de la Secretaría de Desarrollo Humano de la Municipalidad de San Salvador de Jujuy.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item">
+						    <h2 class="accordion-header">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						        Renovación de convenio académico entre la Facultad de Ingeniería y el Municipio de la Ciudad Perico
+						      </button>
+						    </h2>
+						    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						      <div class="accordion-body bg-success text-dark bg-opacity-10">
+						        En horas de la mañana del jueves 23 de mayo del presente año, <strong>la Facultad de Ingeniería de la UNJu realizó la firma del acta acuerdo de colaboración académica con la Municipalidad de la Ciudad de Perico en las oficinas de la intendencia.</strong>
+						        El convenio tiene como objetivo la colaboración entre los organismos vinculados para el desarrollo de actividades académicas, de extensión e investigación. Estas actividades incluyen Prácticas Profesionales Supervisadas, Visitas, Trabajo de Campo y Pasantías, Ciclos de Capacitación Profesional, mejoras en la capacidad de planificación, promoción del ecosistema del 
+						        emprendedurismo, formación del sector docente, cooperación y fortalecimiento del ingreso de estudiantes a las diferentes carreras, fomento del desarrollo y la innovación, siempre bajo las bases de certificación de las normas de calidad, entre otras actividades vinculadas con la discusión de sus objetivos entre los miembros de la comunidad universitaria y la institución municipal de Perico.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item">
+						    <h2 class="accordion-header">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						        Campaña de vacunación UNJu 2024
+						      </button>
+						    </h2>
+						    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						      <div class="accordion-body bg-success text-dark bg-opacity-10">
+						        El día 29 de mayo del corriente, en el Aula Pelayo Pena de la Escuela de Minas "Dr. Horacio Carrillo" de la UNJu, se realizará una Jornada de Vacunación destinada a Estudiantes, Personal Docentes y No Docente de la Universidad Nacional de Jujuy,<strong>en el horario de 09:00 a 15:30 horas.</strong>
+						        Esta actividad es un trabajo colaborativo con el área de Salud de la Secretaría de Bienestar Universitario de la UNJu, la Secretaría de Extensión Universitaria de la UNJu, el Vacunatorio de Campaño (VA.CAM) y el Instituto de Seguros de Jujuy, con el objetivo de resguardar la salud de la comunidad educativa brindando ayor acceso a las vacunas para prevenir enfermedades.
+						        <strong>Vacunas disponibles:</strong>
+									<ul>
+										<li>Doble adulto</li>
+										<li>Hepatitis B</li>
+										<li>Neumo 13</li>
+										<li>Neumo 23</li>
+										<li>Antitetánica</li>
+										<li>COVID-19</li>
+										<li>Antigripal</li>
+									</ul>
+								<strong>Requisitos para la vacuna:</strong>
+									<ul>
+										<li>Mayores de 65 años (sin orden médica)</li>
+										<li>Menores de 64 años (con factores de riesgo y orden médica)</li>
+										<li>Personal de salud y de seguridad</li>
+										<li>Mujeres embarazadas</li>
+									</ul>
+								<strong>Para acceder al servicio, es necesario presentar DNI y carnet de vacunación.</strong>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				</main>
+				</div>
+				<div class="col-3">
+					<div class="container">
+						<div class="row col-12 text-center">
+							<aside>
+								<h2>Enlaces de Interes</h2>
+								<ul>
+									<li ><a href="https://www.fi.unju.edu.ar/servicios/telefonos.html">Teléfonos</a></li>
+									<li ><a href="https://www.fi.unju.edu.ar/servicios/notas.html">Model de Notas</a></li>
+									<li ><a href="https://www.fi.unju.edu.ar/secretarias/sec-administrativa/protocolos-de-bioseguridad.html">Protocolos de Bioseguridad</a></li>
+									<li ><a href="https://www.fi.unju.edu.ar/aulas-virtuales-es/">Aulas Virtuales</a></li>
+									<li ><a href="https://www.fi.unju.edu.ar/servicios/biblioteca.html">Biblioteca</a></li>
+									<li ><a href="https://www.fi.unju.edu.ar/secretarias/sec-academica/calendario-academico.html">Calendario Academico</a></li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+		<div class="container text-center text-light bg-dark">
+			<div class="row justify-content-around">
+				<div class="col-6">
+					<h3>Información de Contacto</h3>
+						<p>San Salvador de Jujuy</p>
+						<p>Jujuy - Argentina</p>
+						<p>Contaco FI UnJu: info@fi.unju.edu.ar</p>
+						<p>Dirección: Ítalo Palanca Nº 10</p>
+				</div>
+				<div class="col-6">
+					<h3>Redes Sociales</h3>
+						<ul>
+							<li><a href="https://www.instagram.com/fiunju/">Instagram</a></li>
+							<li><a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A">Youtube</a></li>
+							<li><a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju">Linkedin</a></li>
+							<li><a href="https://www.facebook.com/fiunju/">Facebook</a></li>
+						</ul>
+				</div>
+			</div>
+			<p><small>Copiright 2024 - Soza Leandro Ariel</small></p>
+		</div>
+		</footer>
 		<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	</div>
 	</body>
 </html>

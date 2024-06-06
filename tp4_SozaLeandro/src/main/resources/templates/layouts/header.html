@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+	<head th:fragment="head">
+		<meta charset="UTF-8">
+		<title data-th-text="${titulo}"></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximun-scale=1, user-scalable=no">
+		<link th:rel="stylesheet" type="text/css" data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	</head>
+	<body>
+		<header th:fragments="header">
+			<div class="text-center">
+				<img alt="logo-UnJu" th:src="@{/images/logoFI.png}" width="100%" height="200">
+				<h1 class="display-4">FACULTAD DE INGENIERIA</h1>
+				<p class="text-danger"><strong>YOU'LL NEVER WALK ALONE</strong></p>
+			</div>
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#">Inicio</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNav">
+			      <ul class="navbar-nav">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">Carreras</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">Noticias</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link " href="#">Contactos</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+	</body>
+</html>
